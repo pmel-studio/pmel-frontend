@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const logoOpenGraphImage = {
-  url: "/logo.png",
-  width: 1536,
-  height: 1024,
+  url: "/og-image.png",
+  width: 800,
+  height: 400,
   alt: "PMEL Studio logo",
 };
 
