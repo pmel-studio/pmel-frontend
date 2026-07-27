@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   title: "PMEL Studio | 프메르 스튜디오",
   description:
     "심플한 토성 로고를 시그니처로 가진 프메르 스튜디오의 포트폴리오와 회사 소개.",
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: [
+      { url: "/logo-mark.png", type: "image/png", sizes: "256x256" },
+      { url: "/logo.png", type: "image/png", sizes: "1536x1024" },
+    ],
+    shortcut: "/logo-mark.png",
+    apple: "/logo-mark.png",
+  },
   openGraph: {
     title: "PMEL Studio | 프메르 스튜디오",
     description:
