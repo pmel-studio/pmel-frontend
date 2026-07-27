@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-pretendard: "Pretendard Variable";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fbfcff;
+  color: #101827;
+  font-family: var(--font-pretendard), Pretendard, Inter, system-ui, sans-serif;
+}
+
+::selection {
+  background: #d8dde6;
+  color: #101827;
+}
+
+.wordmark-shadow {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(16, 24, 39, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 24, 39, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.logo-marquee {
+  animation: logo-marquee 76s linear infinite;
+}
+
+.logo-marquee:hover {
+  animation-play-state: paused;
+}
+
+.word-marquee {
+  animation: word-marquee 34s linear infinite;
+}
+
+.word-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes word-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
